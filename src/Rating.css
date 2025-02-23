@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container */
+  .rating-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Emoji rating */
+  .emoji-rating {
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Hover effect */
+  .emoji {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.2);
+  }
+  
+  .SubmitBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .SubmitBtn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Highlight selected emoji */
+  .selected {
+    color: gold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .emoji-rating {
+        font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .emoji-rating {
+        font-size: 30px;
+    }
+  }
+  
